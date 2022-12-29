@@ -1,0 +1,29 @@
+{
+  "name": "dynamouse",
+  "version": "0.1.0",
+  "description": "A lightweight ORM-like library to simplify working with DynamoDB, specifically supporting single-table design.",
+  "main": "dist/index.js",
+  "repository": "https://github.com/kbanman/dynamouse",
+  "author": "Kelly Banman <kelly.banman@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/jest": "^29.2.4",
+    "@types/node": "^18.11.18",
+    "dotenv": "^8.2.0",
+    "jest": "^25.3.0",
+    "ts-jest": "^25.3.1",
+    "tslint": "^6.1.1",
+    "typescript": "3.8"
+  },
+  "scripts": {
+	  "test": "jest --verbose --coverage",
+	  "lint": "tslint -c tslint.json 'src/**/*.ts'",
+	  "build": "tsc",
+    "prepublishOnly": "tsc"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ]
+}
